@@ -161,11 +161,11 @@ def coll_func(indep_vars):
 if len(sys.argv) > 1:
     camera_file = sys.argv[1]
 else:
-    camera_file = 'cam.inp'
+    camera_file = 'E://WebcamFinse//Cucza//CamCucza.inp'
 if len(sys.argv) > 2:
     point_file = sys.argv[2]
 else:
-    point_file = 'resect.inp'
+    point_file = 'E://WebcamFinse//Cucza//GCPs_Centered.inp'
 
 data = CollinearityData(camera_file, point_file)
 

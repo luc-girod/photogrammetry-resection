@@ -164,11 +164,11 @@ def coll_func(indep_vars):
 if len(sys.argv) > 1:
     camera_file = sys.argv[1]
 else:
-    camera_file = 'cam.inp'
+    camera_file = 'E://WebcamFinse//Cucza//CamCucza.inp'
 if len(sys.argv) > 2:
     point_file = sys.argv[2]
 else:
-    point_file = 'resect.inp'
+    point_file = 'E://WebcamFinse//Cucza//GCPs_Centered.inp'
 
 data = CollinearityData(camera_file, point_file)
 
@@ -188,10 +188,10 @@ res = minimize(coll_func, x0, method='BFGS', options={'disp': True})
 #res = minimize(coll_func, x0, options={'disp': True})
 
 #print res.x
-print 'Solution:'
-print 'omega, ', res.x[0]
-print 'phi, ', res.x[1]
-print 'kappa, ', res.x[2]
-print 'XL, ', res.x[3]
-print 'YL, ', res.x[4]
-print 'ZL, ', res.x[5]
+print('Solution:')
+print('omega, ', res.x[0])
+print('phi, ', res.x[1])
+print('kappa, ', res.x[2])
+print('XL, ', res.x[3])
+print('YL, ', res.x[4])
+print('ZL, ', res.x[5])
